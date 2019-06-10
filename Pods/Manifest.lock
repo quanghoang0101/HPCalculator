@@ -1,0 +1,16 @@
+PODS:
+  - HPCalculator (0.0.1)
+
+DEPENDENCIES:
+  - HPCalculator (from `../HPCalculator`)
+
+EXTERNAL SOURCES:
+  HPCalculator:
+    :path: "../HPCalculator"
+
+SPEC CHECKSUMS:
+  HPCalculator: 5686b34003990c7cee8c22d5e6478ed72350160f
+
+PODFILE CHECKSUM: dff4fa61d4106bce6158eae670141f8b87b9bdac
+
+COCOAPODS: 1.7.1
