@@ -1,0 +1,6 @@
+language: swift # or objective-c
+osx_image: xcode10
+script:
+  - xcodebuild -scheme HPCalculator -workspace HPCalculator.xcworkspace -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone Xr,OS=12.2' build test
+after_success:
+  - bash <(curl -s https://codecov.io/bash) -t 5a1aec29-267c-470f-ae35-9fffe2413400
