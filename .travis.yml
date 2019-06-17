@@ -1,5 +1,5 @@
 language: swift # or objective-c
-osx_image: xcode10
+osx_image: xcode10.2.1
 script:
   - xcodebuild -scheme HPCalculator -workspace HPCalculator.xcworkspace -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone XR,OS=12.0' build test
 after_success:
