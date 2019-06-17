@@ -1,7 +1,5 @@
 language: swift # or objective-c
-osx_image: xcode10.2.1
-before_install:
-  - pod repo update > /dev/null
+osx_image: xcode10.2
 script:
   - xcodebuild -scheme HPCalculator -workspace HPCalculator.xcworkspace -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=11.4' build test
 after_success:
